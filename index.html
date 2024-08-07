@@ -1,0 +1,12 @@
+<button id="xr">写入</button>
+<script>
+  const fs = require('fs');
+
+
+  const myInput = document.getElementById('xr');
+  myInput.addEventListener('click', function () {
+      alert('按钮被点击了');
+fs.writeFileSync('file.txt', '这是写入的内容');
+
+    });
+</script>
